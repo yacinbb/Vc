@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Valentin Card</title>
+   <style>
+  .bloc1{
+    position: relative;
+  }
+  body {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  flex-direction: column;
+}
+
+.img img{
+  width: 300px;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 10px 10px 30px 10px rgb(247, 110, 231);;
+}
+h1{
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  animation: h1anim ;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+.but{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+button{
+width: 160px;
+height: 75px;
+margin: 50px;
+font-size: 20px;
+font-weight: bold;
+border-radius:10px;
+}
+.yes{
+  background: rgb(247, 110, 231);
+}
+.button .no{
+  cursor: pointer;
+}
+ .no:hover {
+  cursor: pointer;
+  right: 550px;
+} 
+.yes{
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgb(225, 75, 100), 0 0 25px rgb(206, 87, 107);
+}
+.yes:hover{
+box-shadow: 0 0 5px rgb(225, 75, 100),
+0 0 25px rgb(225, 75, 100),
+ 0 0 50px rgb(225, 75, 100), 
+ 0 0 100px rgb(225, 75, 100),
+  0 0 200px rgb(225, 75, 100);
+} 
+@keyframes h1anim {
+  0%{
+    color: white;
+  }
+  25%{
+    
+  }
+  50%{
+    color: rgb(93, 7, 11);
+    
+  }
+  75%{
+    
+    color: white;
+  }
+  100% {
+    color: rgb(93, 7, 11);
+
+  }
+}
+@keyframes lovemove{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* media to tel */
+@media (max-width: 600px) {
+  .pos1, .pos2, .pos3, .pos4, .pos5, .pos6 {
+    animation: none;
+    display: none;
+  }
+  .img img{
+  width: 250px;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 1px 1px 30px 10px rgb(247, 110, 231);;
+}
+#titre{
+  margin-top: 50px;
+  font-size: 35px;
+}
+button{
+width: 100px;
+height: 60px;
+margin: 30px;
+font-size: 15px;
+font-weight: bold;
+border-radius:10px;
+}
+.no{
+  width: 160px;
+  height: 90px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.no:hover {
+  cursor: pointer;
+  right: 550px;
+  
+} 
+.yes{
+  border: none;
+  width: 150px;
+  height: 70px;
+  font-size: 20px;
+  border: none;
+}
+.yes:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(225, 75, 100), 0 0 25px rgb(206, 87, 107);
+}
+}
+
+
+
+/* @media (orientation: landscape){
+  .pos1 ,.pos2, .pos4, .pos5, .pos6 {
+    animation: none;
+    display: none;
+  }
+.pos3 , img img{
+  display: flex;
+  justify-content: center;
+}
+  h1 {
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+    animation: h1anim;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+
+  .img img {
+    width: 170px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px 10px rgb(247, 110, 231);
+  }
+
+  .imgs img:nth-child() {
+    width: 10px ;
+    height: 10px;
+  }
+
+  button {
+    width: 120px;
+    height: 70px;
+    margin: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .pos1 {
+    position: absolute;
+    top: 50px !important;
+    left: 0px;
+  }
+
+  .pos3 {
+    position: absolute;
+    top: 50px !important;
+    right: 40px;
+  }
+
+  .yes {
+    cursor: pointer;
+    border: none;
+  }
+} */
+
+
+
+
+
+.pos1, .pos2, .pos3, .pos4, .pos5, .pos6 {
+  animation: lovemove 3s ease-in-out infinite;
+}
+.pos1 {
+  
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  
+}
+
+.pos2 {
+  
+  position: absolute;
+  top: 320px;
+  left: 40px;
+}
+
+.pos3 {
+  
+  position: absolute;
+  top: 120px;
+  right: 40px;
+}
+.pos4 {
+ 
+  position: absolute;
+  top: 320px;
+  right: 40px;
+}
+.pos5 {
+  
+  position: absolute;
+  top: 600px;
+  right: 200px;
+}
+.pos6{
+ 
+  position: absolute;
+  top: 600px;
+  left: 200px;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.imgs img{
+  border-radius: 50%;
+  width: 70px;
+  display: none;
+}
+@keyframes slideAndFadeIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.imgs img.slideAndFadeIn {
+    animation: slideAndFadeIn 0.5s ease-out;
+}
+
+
+    </style> 
+  
+</head>
+<body>
+ 
+  <div class="bloc1">
+  <h1 id="titre">Will you be my Valentine&#127801; ?</h1>
+        <div class="img" id="valentineImage">
+          <img class="h-[200px]" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif">
+        </div>
+   
+        <div class="but">
+          <button id="yesButton" class="yes" onclick="changeImage()">Yess &#128151;</button>     
+               <button class="no" id="noo" >No  &#128557;</button>
+        </div>
+  </div>
+        <div class="m-love">
+          <ul>
+            <li class="pos1"><img class="heart-react" src="img/im1.bmp" alt=""></li>
+            <li class="pos2"><img class="heart-react" src="img/im1.bmp" alt=""></li>
+            <li class="pos3"><img class="heart-react" src="img/im1.bmp" alt=""></li>
+            <li class="pos4"><img class="heart-react" src="img/im1.bmp" alt=""></li>
+            <li class="pos5"><img class="heart-react" src="img/im1.bmp" alt=""></li>
+            <li class="pos6"><img class="heart-react" src="img/im1.bmp" alt=""></li>
+          </ul>
+        </div>
+        <audio src="audio/Y2meta.app - Ed Sheeran - Perfect (Official Music Video) (128 kbps).mp3"></audio>
+        <div class="imgs">
+          <img src="img/im1.jpg" alt="">
+          <img src="img/im1.jpg" alt="">
+          <img src="img/im1.jpg" alt="">
+          <img src="img/im1.jpg" alt="">
+          <img src="img/im1.jpg" alt="">
+        </div>
+        <script>
+          const yesButton = document.querySelector('.yes'); 
+          const noButton = document.querySelector('.no');
+          const audio = document.querySelector('audio');
+          let clickCounter = 0;
+      
+          function changeImage() {
+              document.getElementById('valentineImage').innerHTML = '<img class="h-[200px]" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif">';
+              document.getElementById('titre').innerHTML = '<h1>Ok Yayy ❤️ !!! </h1>';
+              document.getElementById('titre').style.margin = '20px';
+              audio.currentTime = 20;
+              audio.play();
+              clickCounter = 0;
+              yesButton.style.width = '160px';
+              yesButton.style.height = '80px';
+              yesButton.style.fontSize = '30px';
+              yesButton.style.display = 'none';
+              yesButton.addEventListener('click', () => {
+              yesButton.style.display = 'none';
+              });
+              document.getElementById('noo').innerHTML = 'HAHAHAHAHA';
+              switch (clickCounter) {
+                  case 1:
+                      noButton.innerHTML = 'Did you mean Yes  &#128521; NO';
+                      break;
+                  default:
+                      break;
+              }
+          }
+          function changeAudioSource(src, startTime) {
+    audio.src = src;
+    audio.currentTime = startTime;
+
+    audio.addEventListener('loadedmetadata', function () {
+        audio.currentTime = startTime;
+    });
+}
+
+          noButton.addEventListener('click', () => {
+              clickCounter++;
+      
+              switch (clickCounter) {
+                  case 1:
+                      noButton.innerHTML = 'did you mean yes ?<br> No';
+                      yesButton.style.width = '200px';
+                      yesButton.style.height = '100px';
+                      yesButton.style.fontSize = '40px';
+                      yesButton.style.boxShadow = '0 0 5px rgb(225, 75, 100),0 0 25px rgb(225, 75, 100),0 0 50px rgb(225, 75, 100), 0 0 100px rgb(225, 75, 100),0 0 200px rgb(225, 75, 100)';
+                    
+                      break;
+                      case 2:
+                        noButton.innerHTML = 'If you say no , <br>ill be very sad <br> Noo';
+                        yesButton.style.width = '240px';
+                        yesButton.style.fontSize = '50px';
+                        yesButton.style.height = '130px';
+                       
+                      
+                      break;
+                  case 3:
+                      noButton.innerHTML = 'Just think about it <br> No';
+                      yesButton.style.width = '260px';
+                      yesButton.style.fontSize = '50px';
+                      yesButton.style.height = '150px';
+                      
+                      break;
+                  case 4:
+                      noButton.innerHTML = 'Hmmmmm';
+                      yesButton.style.fontSize = '50px';
+                      yesButton.style.width = '290px';
+                      yesButton.style.height = '165px';
+                      
+                      break;
+                      case 5:
+                        noButton.innerHTML = 'Last Click are you sur No ? <br> Yes';
+                        yesButton.style.fontSize = '40px';
+                        yesButton.style.width = '300px';
+                        yesButton.style.height = '175px';
+                        
+                      break;
+                      case 6:
+                        yesButton.style.width = '250px';
+                        yesButton.style.fontSize = '30px';
+                        yesButton.style.height = '130px';
+                        changeAudioSource('audio/Y2meta.app - Ed Sheeran - Perfect (Official Music Video) (128 kbps).mp3',20);
+                        audio.currentTime = 20;
+                        audio.play();
+                        changeImage();
+                        break;
+                        default:
+                        break;
+                          }
+                      });
+                      yesButton.addEventListener('click', () => {
+                      yesButton.style.display = 'none';
+                      document.getElementById('noo').innerHTML = '❤️';
+                      audio.src = 'audio/Y2meta.app - Ed Sheeran - Perfect (Official Music Video) (128 kbps).mp3';
+                      audio.currentTime = 20;
+                      audio.play();
+    
+    
+});
+      </script>
+</body>
+</html>
